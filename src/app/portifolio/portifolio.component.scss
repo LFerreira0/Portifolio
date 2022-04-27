@@ -1,0 +1,95 @@
+$verde_claro: #00bf8f;
+$verde_escuro: #001510;
+section{
+  height: 120vh;
+  position: absolute;
+  width: 100%;
+  margin-top: 200vh;
+
+  h1{
+    background-color: transparent;
+    color: rgba(114, 114, 114, 0.9);
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .feitos{
+    margin-top: 15em;
+    width: 67%;
+    height: 60vh;
+
+    .sites{
+      width: 33.333%;
+      height: 28vh;
+      float: left;
+      position: relative;
+
+      .overlay{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: #121212;
+        cursor: pointer;
+        transition: .6s;
+        text-align: center;
+
+        a{
+          text-decoration: none;
+        }
+
+        h3{
+          margin-top: 5em;
+          font-size: 20px;
+        }
+
+        h3, h5{
+          color: #fff;
+        }
+        p{
+          margin-top: 2em;
+          color: $verde_claro;
+          font-weight: bold;
+          font-size: 15px;
+        }
+
+      }
+
+      .overlay:hover{
+        opacity: .99;
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 650px){
+  section{
+    margin-top: 390vh;
+    .feitos{
+      width: 100%;
+      margin-top: 10em;
+      position: absolute;
+      overflow: hidden;
+      height: 110vh;
+
+      .sites{
+        width: 100%;
+        height: 35vh;
+      }
+
+    }
+  }
+}

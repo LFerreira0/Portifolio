@@ -1,0 +1,159 @@
+$verde_claro: #00bf8f;
+$verde_escuro: #001510;
+
+header{
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  z-index: 500;
+
+  .logo{
+    width: 20%;
+    float: left;
+    height: 100%;
+    min-width: 140px;
+    margin-left: 1em;
+
+    img{
+      margin-left: 2em;
+      margin-top: .3em;
+    }
+
+    a{
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 25px;
+      vertical-align: middle;
+      margin-left: .5em;
+    }
+  }
+
+  #btn-mobile{
+    display: none;
+    float: left;
+    vertical-align: middle;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #FFF;
+  }
+
+  nav{
+    width: 70%;
+    height: 100%;
+    float: right;
+
+    ul{
+      list-style: none;
+      margin: 0;
+      display: flex;
+      height: 80%;
+      float: right;
+      margin-right: 0px !important;
+
+      li{
+        padding: 1em;
+        background-color: transparent;
+        a{
+          color: #fff;
+          text-decoration: none ;
+          font-weight: 500;
+          font-size: 18px;
+          position: relative;
+          z-index: 3;
+          background-color: transparent;
+          text-shadow: 1px solid #000;
+        }
+
+        a:hover::after, a.is-active::after{
+          content: '';
+          background-color: $verde_claro;
+          height: 9px;
+          left: 1px;
+          z-index: -1;
+          bottom: 0;
+          left: -5px;
+          position: absolute;
+          width: 100%;
+          transition: 1000ms;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 650px){
+
+    #estilo{
+      margin-top: 70px;
+      left: 0;
+      background-color: #001510;
+    }
+
+    .logo{
+      margin-left: -1.3em;
+      margin-top: 0.1em;
+    }
+
+    #btn-mobile{
+      display: flex;
+      padding: .5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: .5rem;
+      color: $verde_claro;
+      vertical-align: middle;
+    }
+
+    #hamburguer{
+      display: block;
+      border-top: 2px solid;
+      width: 20px;
+      color: $verde_claro;
+      margin-top: 5px;
+      font-weight: bolder;
+    }
+
+    #hamburguer::after , #hamburguer::before{
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+    }
+
+    nav{
+      display: none;
+    }
+
+    #menu{
+      position: absolute;
+      width: 100%;
+      top: 60px;
+      right: 0px;
+      display: block;
+      height: 0;
+      z-index: 1000;
+    }
+
+
+    #menu a{
+      margin: 0 1rem;
+      border-bottom: .1px solid $verde_claro;
+    }
+
+    #menu a:hover{
+      border-bottom: 3px solid $verde_claro;
+      transition: 1s;
+    }
+
+    #menu a::after{
+      display: none;
+    }
+  }
+}
+
