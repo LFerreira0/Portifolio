@@ -1,37 +1,46 @@
 $verde_claro: #00bf8f;
 $verde_escuro: #001510;
+$dark: #121212;
+
+*{
+  background-color: transparent;
+}
+
 section{
   height: 100vh;
-  position: absolute;
   width: 100%;
-  margin-top: calc(100vh);
+  margin-top: -9vh;
+  background-color: $dark;
 
   h1{
     background-color: transparent;
     color: rgba(114, 114, 114, 0.9);
     text-align: center;
-    margin-top: 2em;
   }
 
   .beneficios{
     width: 60%;
     height: 30vh;
-    display: flex;
-    justify-content: space-between;
     margin-top: 3em;
+    background-color: transparent;
 
     .vantagem{
-      width: 20%;
       float: left;
       height: 100%;
       color: #fff;
       text-align: center;
       font-weight: 100;
+      width: 25%;
 
       h1{
         color: #fff;
         font-size: 18px;
         margin-top: 1em;
+        background-color: transparent;
+      }
+
+      p{
+        background-color: transparent;
       }
 
       .imagem:hover{
@@ -60,13 +69,13 @@ section{
         margin-top: 2em;
         text-align: center;
         border-radius: 50px;
+        background-color: transparent;
 
         img{
           margin-top: 1.5em;
           background-color: transparent;
           height: 3em;
         }
-
       }
     }
   }
@@ -80,6 +89,10 @@ section{
       height: 100%;
       float: left;
       text-align: center;
+
+      .content{
+        background-color: transparent;
+      }
 
       h1{
         color: #fff;
@@ -104,7 +117,6 @@ section{
         margin-top: 2em;
         border-radius: 50%;
       }
-
     }
 
     .conhecimentos{
@@ -165,73 +177,59 @@ section{
         .setenta{
           width: 55%;
         }
-
       }
     }
   }
 }
 
-@media (max-width: 1400px){
+@media(max-width: 1400px){
   section{
+    height: 150vh;
     .beneficios{
-      width: 40%;
-      display: block;
-      margin-top: 1em;
+
+      width: 95%;
 
       .vantagem{
         width: 50%;
-        height: 30vh;
-        border-bottom: 1px solid rgba(114, 114, 114, 0.459);
-
       }
     }
-
     .detalhes{
-      width: 100%;
-      .perfil{
-        width: 100%;
-        height: 50vh;
-      }
+      width: 95%;
+      margin-top: 5em;
 
-      .conhecimentos{
-        width: 100%;
-        padding-bottom: 2em;
-        font-size: 12px;
-        height: 40vh;
+
+      img{
+        height: 10em;
+        width: 10em;
       }
     }
   }
 }
 
-@media (max-width: 650px){
-  section {
+@media(max-width: 900px){
+  section{
+    height: 250vh;
     .beneficios{
       width: 80%;
-      display: block;
-      margin-top: 1em;
-
       .vantagem{
-        width: 100%;
-        height: 40vh;
-        border-bottom: 1px solid rgba(114, 114, 114, 0.459);
+        width: 50%;
+        height: 50vh;
       }
     }
 
     .detalhes{
-      width: 100%;
       .perfil{
         width: 100%;
-        height: 65vh;
       }
 
       .conhecimentos{
-        width: 100%;
-        padding-bottom: 2em;
-        font-size: 12px;
-        height: 60vh;
+        width: 95%;
+        margin-top: 5em;
+        .container{
+          width: 100%;
+          font-size: 13px;
+        }
       }
-
     }
-
   }
 }

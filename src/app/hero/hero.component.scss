@@ -2,11 +2,10 @@ $verde_claro: #00bf8f;
 $verde_escuro: #001510;
 
 section{
-  height: calc(100vh - 60px);
+  height: calc(103vh);
   width: 100%;
   display: flex;
   margin-top: 60px;
-  position: absolute;
   z-index: -1;
 
   .conteudo{
@@ -14,15 +13,19 @@ section{
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    margin-top: 35vh;
-    border-bottom: 1px solid rgba(114, 114, 114, 0.459);
+    margin-top: 2vh;
+    height: 20vh;
+    margin-top: 40vh;
+    background-color: transparent;
 
     h1, h2{
       font-weight: normal;
+      background-color: transparent;
     }
 
     span{
       color: $verde_claro;
+      background-color: transparent;
     }
 
     span:hover{
@@ -59,26 +62,6 @@ section{
         transition: 0.6s ease-in-out;
       }
     }
-
   }
 }
 
-@media (max-width: 650px){
-  #hero{
-    .conteudo{
-
-      h1{
-        font-size: 20px;
-      }
-
-      h2{
-        font-size: 18px;
-      }
-
-      button{
-        margin-top: 2em;
-      }
-
-    }
-  }
-}

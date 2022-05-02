@@ -5,8 +5,8 @@ header{
   height: 60px;
   width: 100%;
   position: fixed;
-  display: flex;
   z-index: 500;
+  top: 0;
 
   .logo{
     width: 20%;
@@ -14,10 +14,12 @@ header{
     height: 100%;
     min-width: 140px;
     margin-left: 1em;
+    background-color: transparent;
 
     img{
       margin-left: 2em;
       margin-top: .3em;
+      background-color: transparent;
     }
 
     a{
@@ -27,6 +29,7 @@ header{
       font-size: 25px;
       vertical-align: middle;
       margin-left: .5em;
+      background-color: transparent;
     }
   }
 
@@ -44,6 +47,7 @@ header{
     width: 70%;
     height: 100%;
     float: right;
+    background-color: transparent;
 
     ul{
       list-style: none;
@@ -52,6 +56,7 @@ header{
       height: 80%;
       float: right;
       margin-right: 0px !important;
+      background-color: transparent;
 
       li{
         padding: 1em;

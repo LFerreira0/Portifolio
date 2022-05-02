@@ -3,11 +3,10 @@ $verde_escuro: #001510;
 
 footer{
   height: 200px;
-  position: absolute;
   width: 100%;
   z-index: 99;
-  margin-top: 320vh;
   text-align: center;
+  min-width: 200px;
 
   .media{
     width: 20%;
@@ -34,6 +33,18 @@ footer{
 
     span{
       color: $verde_claro;
+    }
+  }
+}
+
+@media (max-width: 650px){
+  footer{
+    .media{
+      width: 100%;
+    }
+
+    span{
+      margin-top: 5em;
     }
   }
 }
