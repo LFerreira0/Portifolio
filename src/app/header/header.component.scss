@@ -91,9 +91,9 @@ header{
   @media (max-width: 650px){
 
     #estilo{
-      margin-top: 70px;
+      margin-top: -5px;
       left: 0;
-      background-color: #001510;
+      background-color: #121212;
     }
 
     .logo{
@@ -111,6 +111,7 @@ header{
       gap: .5rem;
       color: $verde_claro;
       vertical-align: middle;
+      float: right;
     }
 
     #hamburguer{
@@ -144,7 +145,6 @@ header{
       height: 0;
       z-index: 1000;
     }
-
 
     #menu a{
       margin: 0 1rem;

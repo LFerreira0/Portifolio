@@ -4,15 +4,15 @@
     <a href="#">LCF</a>
 
   </div>
-  <nav [ngStyle]="estilo" id="estilo">
-    <ul id="menu">
-      <li><a href="#" [routerLink]="['/']" [routerLinkActive]="['is-active']">Home</a>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#projetos">Portifólio</a></li>
-      <li><a href="#">Contatos</a></li>
-    </ul>
-  </nav>
   <button  id="btn-mobile" (click)="toggle()">Menu
     <span [ngStyle]="hamburguer" id="hamburguer"></span>
   </button>
+  <nav [ngStyle]="estilo" id="estilo">
+    <ul id="menu">
+      <li><a href="#hero" (click)="inativo()">Home</a>
+      <li><a href="#sobre" (click)="inativo()">Sobre</a></li>
+      <li><a href="#projetos" (click)="inativo()">Portifólio</a></li>
+      <li><a href="#">Contatos</a></li>
+    </ul>
+  </nav>
 </header>

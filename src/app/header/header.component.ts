@@ -49,8 +49,5 @@ export class HeaderComponent implements OnInit {
       "transform" : "rotate(0deg)",
       "transition" : ".6s"
     }
-
-
   }
-
 }
