@@ -9,10 +9,10 @@
   </button>
   <nav [ngStyle]="estilo" id="estilo">
     <ul id="menu">
-      <li><a href="#hero" (click)="inativo()">Home</a>
-      <li><a href="#sobre" (click)="inativo()">Sobre</a></li>
-      <li><a href="#projetos" (click)="inativo()">Portifólio</a></li>
-      <li><a href="#">Contatos</a></li>
+      <li><a href="#hero" routerLink="/">Home</a>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Portifólio</a></li>
+      <li><a href="#" routerLink="/contatos">Contatos</a></li>
     </ul>
   </nav>
 </header>

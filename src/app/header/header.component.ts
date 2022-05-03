@@ -50,4 +50,5 @@ export class HeaderComponent implements OnInit {
       "transition" : ".6s"
     }
   }
+
 }
