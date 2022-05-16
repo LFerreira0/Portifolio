@@ -1,7 +1,7 @@
 $verde_claro: #00bf8f;
 $verde_escuro: #001510;
 
-section{
+section {
   height: calc(103vh);
   width: 100%;
   display: flex;
@@ -53,7 +53,6 @@ section{
     }
 
     button:hover{
-
       background-color: $verde_claro;
       border: none;
 

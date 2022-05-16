@@ -1,0 +1,114 @@
+$verde_claro: #00bf8f;
+$verde_escuro: #001510;
+*{
+  margin: 0 auto;
+}
+section{
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+
+  .contato{
+    width: 60%;
+    height: 100vh;
+
+    h1{
+      background-color: transparent;
+      color: rgba(114, 114, 114, 0.9);
+      text-align: center;
+    }
+
+    #formulario{
+      width: 70%;
+      height: 50vh;
+      margin-top: 10vh;
+      position: relative;
+
+      h3{
+        color: $verde_claro;
+        font-size: 20px;
+        font-weight: 500;
+
+      }
+
+      form{
+        margin-top: 2em;
+      }
+
+      input{
+        width: 80%;
+        border: none;
+        background-color: #0d0d0d;
+        margin-top: 2px;
+        height: 2.5em;
+        padding-left: 20px;
+        font-weight: 600;
+      }
+
+      textarea{
+        width: 80%;
+        height: 15vh;
+        padding-top: 1em;
+        padding-left: 1em;
+        border: none;
+        background-color: #0d0d0d;
+        margin-top: 2px;
+        resize: none;
+        font-weight: 600;
+      }
+
+      button{
+        width: 80%;
+        border: none;
+        background-color: #00bf8f;
+        height: 2.5em;
+        color: #fff;
+        margin-top: 2px;
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+
+    }
+
+  }
+
+  .scroll{
+    position: absolute;
+    left: calc(50% - 1.5em);
+    bottom: 0;
+    cursor: pointer;
+    height: 1em;
+
+    img{
+      width: 70%;
+    }
+
+  }
+
+}
+
+@media(max-width: 900px){
+
+  section{
+    height: 120vh;
+  }
+
+  #contato{
+    width: 100%;
+
+    .contato{
+      width: 100%;
+
+      #formulario{
+        width: 100%;
+      }
+
+      .scroll{
+        top: 120%;
+      }
+
+    }
+
+  }
+
+}
