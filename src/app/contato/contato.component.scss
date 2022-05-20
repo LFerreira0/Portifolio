@@ -28,7 +28,6 @@ section{
         color: $verde_claro;
         font-size: 20px;
         font-weight: 500;
-
       }
 
       form{
@@ -43,6 +42,8 @@ section{
         height: 2.5em;
         padding-left: 20px;
         font-weight: 600;
+        color: #fff;
+        font-weight: normal;
       }
 
       textarea{
@@ -55,6 +56,8 @@ section{
         margin-top: 2px;
         resize: none;
         font-weight: 600;
+        color: #fff;
+        font-weight: normal;
       }
 
       button{
