@@ -6,7 +6,7 @@ header{
   width: 100%;
   position: fixed;
   z-index: 500;
-  top: 0;
+  top: 0;  
 
   .logo{
     width: 20%;
@@ -14,11 +14,38 @@ header{
     height: 100%;
     min-width: 140px;
     margin-left: 1em;
-    background-color: transparent;
+    background-color: transparent;    
+    display: flex;
+    color: #fff;             
+    
+    .label{
+        position: relative;        
+        height: 50px;
+        width: 200px;
+        padding: none;           
+        margin-left: 0 !important;
+        display: flex;
+        
+      h1{
+        color: #fff;             
+        font-size: 30px;
+        margin-top: .3em;
+        position: relative;     
+        overflow: hidden;
+        margin-left: 0em;        
+      }
+
+      .typing{
+        position: absolute;
+        left: 0;
+      }
+    }
+
 
     img{
       margin-left: 2em;
       margin-top: .3em;
+      margin-right: .1em;
       background-color: transparent;
     }
 
@@ -30,6 +57,8 @@ header{
       vertical-align: middle;
       margin-left: .5em;
       background-color: transparent;
+      background-color: yellow;
+
     }
   }
 
@@ -99,6 +128,10 @@ header{
     .logo{
       margin-left: -1.3em;
       margin-top: 0.1em;
+
+      h1:last-child{
+        display: none;
+      }
     }
 
     #btn-mobile{

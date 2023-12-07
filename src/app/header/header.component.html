@@ -1,8 +1,23 @@
+
+
 <header>
   <div class="logo">
     <img src="../../assets/img/brackets.png" alt="logo" height="50">
-    <a href="#">LCF</a>
-
+    <div class="label">
+      <h1>LCF</h1>      
+        <ngx-typed-js 
+        [strings]="['LCF', 'LCF', 'LCF', 'LCFerreira', 'LCFrontend']" 
+        [loop]="true" [typeSpeed]="200" 
+        [startDelay]="200" 
+        [backSpeed]="100" 
+        [backDelay]="500" 
+        [showCursor]="false"
+        [smartBackspace]="true"
+        >
+        <h1 class="typing"></h1>
+        </ngx-typed-js>
+      </div>
+    
   </div>
   <button  id="btn-mobile" (click)="toggle()">Menu
     <span [ngStyle]="hamburguer" id="hamburguer"></span>

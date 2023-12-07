@@ -15,7 +15,7 @@ section{
   h1{
     background-color: transparent;
     color: rgba(114, 114, 114, 0.9);
-    text-align: center;
+    text-align: center;    
   }
 
   .beneficios{
@@ -82,45 +82,51 @@ section{
 
   .detalhes{
     width: 60%;
-    height: 50vh;
+    height: 50vh;    
+    display: flex;        
+    align-items: center;
 
-    .perfil{
+    .perfil{      
       width: 50%;
-      height: 100%;
-      float: left;
+      height: 100%;      
+      text-align: center;        
+      display: flex;
+      align-items: center;
+    }
+
+    .content{
+      
+      background-color: transparent;
       text-align: center;
+      width: 70%;
+    }
 
-      .content{
-        background-color: transparent;
-      }
+    h1{
+      color: #fff;      
+      font-size: 22px;
+      margin-top: 1em;
+    }
 
-      h1{
-        color: #fff;
-        margin-top: 1em;
-        font-size: 22px;
-      }
+    p{
+      width: 80%;
+      color: #fff;
+      margin-top: 1em;
+      font-weight: lighter;
+    }
 
-      p{
-        width: 80%;
-        color: #fff;
-        margin-top: 1em;
-        font-weight: lighter;
-      }
+    a{
+      text-decoration: none;
+    }
 
-      a{
-        text-decoration: none;
-      }
+    span{
+      color: $verde_claro;
+      cursor: pointer;
+      font-weight: 500;
+    }
 
-      span{
-        color: $verde_claro;
-        cursor: pointer;
-        font-weight: 500;
-      }
-
-      img{
-        margin-top: 2em;
-        border-radius: 50%;
-      }
+    img{
+      margin-top: 2em;
+      border-radius: 50%;
     }
 
     .conhecimentos{

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { elementAt } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +14,7 @@ export class HeaderComponent implements OnInit {
   exibeMenu: boolean = true;
   estilo = {};
   hamburguer = {};
+  labelAdicional: string = "teste";
 
   toggle(){
     if (this.exibeMenu === true){
