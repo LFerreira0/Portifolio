@@ -1,8 +1,14 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
 *{
   margin: 0 auto;
   background-color: #121212;
   scroll-behavior: smooth;
-}
 
+  html {
+    scroll-behavior: smooth;
+  }
+}
 
 
